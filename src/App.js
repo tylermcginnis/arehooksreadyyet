@@ -5,7 +5,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <span>No.</span>
+        <span>Yes.</span>
       </div>
     );
   }
