@@ -1,14 +1,14 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import './App.css';
 
-class App extends Component {
-  render() {
+const minumumVersion = "16.8.0";
+function App(){
+	const [isReady, setReady] = useState(React.version >= minumumVersion );
     return (
       <div className="App">
-        <span>No.</span>
+        <span>{isReady ? "Yes" : "No"}</span>
       </div>
     );
-  }
 }
 
 export default App;
